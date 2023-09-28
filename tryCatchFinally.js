@@ -16,7 +16,7 @@ try{
     function desconto (valor) {
         let desc = 0.15 * valor;
         if (desc > 10){
-            throw new Error('Desconto máximo de R$ 10,00.')
+            throw new Error('O valor calculado ultrapassa o valor do desconto máximo de R$ 10,00.')
         }
         desc = 10;
         console.log(`Você está economizando ${desc}`);
